@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		300222E5280DB5D50019B2E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300222E4280DB5D50019B2E8 /* AppDelegate.swift */; };
 		300222E7280DB5D50019B2E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300222E6280DB5D50019B2E8 /* SceneDelegate.swift */; };
-		300222E9280DB5D50019B2E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300222E8280DB5D50019B2E8 /* ViewController.swift */; };
+		300222E9280DB5D50019B2E8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300222E8280DB5D50019B2E8 /* MainViewController.swift */; };
 		300222EC280DB5D50019B2E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300222EA280DB5D50019B2E8 /* Main.storyboard */; };
 		300222EE280DB5D70019B2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 300222ED280DB5D70019B2E8 /* Assets.xcassets */; };
 		300222F1280DB5D70019B2E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300222EF280DB5D70019B2E8 /* LaunchScreen.storyboard */; };
+		300222FC280DB6200019B2E8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300222FB280DB6200019B2E8 /* Model.swift */; };
+		300222FF280DB8BB0019B2E8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300222FE280DB8BB0019B2E8 /* MainViewModel.swift */; };
+		3028962F280DC74E002A92A2 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028962E280DC74E002A92A2 /* TestView.swift */; };
+		30289633280DC986002A92A2 /* TestView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30289632280DC986002A92A2 /* TestView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		300222E1280DB5D50019B2E8 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		300222E4280DB5D50019B2E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		300222E6280DB5D50019B2E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		300222E8280DB5D50019B2E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		300222E8280DB5D50019B2E8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		300222EB280DB5D50019B2E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		300222ED280DB5D70019B2E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		300222F0280DB5D70019B2E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		300222F2280DB5D70019B2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300222FB280DB6200019B2E8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		300222FE280DB8BB0019B2E8 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		3028962E280DC74E002A92A2 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		30289632280DC986002A92A2 /* TestView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				300222E4280DB5D50019B2E8 /* AppDelegate.swift */,
 				300222E6280DB5D50019B2E8 /* SceneDelegate.swift */,
-				300222E8280DB5D50019B2E8 /* ViewController.swift */,
+				300222F8280DB5F10019B2E8 /* Main Module */,
 				300222EA280DB5D50019B2E8 /* Main.storyboard */,
 				300222ED280DB5D70019B2E8 /* Assets.xcassets */,
 				300222EF280DB5D70019B2E8 /* LaunchScreen.storyboard */,
 				300222F2280DB5D70019B2E8 /* Info.plist */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		300222F8280DB5F10019B2E8 /* Main Module */ = {
+			isa = PBXGroup;
+			children = (
+				300222FD280DB89A0019B2E8 /* ViewModel */,
+				300222FA280DB6130019B2E8 /* Model */,
+				300222F9280DB60D0019B2E8 /* View */,
+			);
+			path = "Main Module";
+			sourceTree = "<group>";
+		};
+		300222F9280DB60D0019B2E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				300222E8280DB5D50019B2E8 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		300222FA280DB6130019B2E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				300222FB280DB6200019B2E8 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		300222FD280DB89A0019B2E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				300222FE280DB8BB0019B2E8 /* MainViewModel.swift */,
+				3028962E280DC74E002A92A2 /* TestView.swift */,
+				30289632280DC986002A92A2 /* TestView + Extension.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				300222E9280DB5D50019B2E8 /* ViewController.swift in Sources */,
+				3028962F280DC74E002A92A2 /* TestView.swift in Sources */,
+				300222FF280DB8BB0019B2E8 /* MainViewModel.swift in Sources */,
+				300222E9280DB5D50019B2E8 /* MainViewController.swift in Sources */,
 				300222E5280DB5D50019B2E8 /* AppDelegate.swift in Sources */,
 				300222E7280DB5D50019B2E8 /* SceneDelegate.swift in Sources */,
+				300222FC280DB6200019B2E8 /* Model.swift in Sources */,
+				30289633280DC986002A92A2 /* TestView + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
