@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //переделать на инъекцию
+        
         viewModel = MainViewModel()
 
         createView()

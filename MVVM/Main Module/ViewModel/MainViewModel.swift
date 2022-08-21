@@ -10,7 +10,6 @@ import Foundation
 protocol MainViewModelProtocol {
     var updateViewData: ((ViewData)->())? { get set }
     func startFetch()
-    
 }
 
 final class MainViewModel: MainViewModelProtocol {
